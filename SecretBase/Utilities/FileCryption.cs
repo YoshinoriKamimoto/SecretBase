@@ -18,7 +18,7 @@ namespace SecretBase.Utilities
                 aes.Key = key.GetBytes(aes.KeySize / 8);
                 aes.IV = key.GetBytes(aes.BlockSize / 8);
 
-                string fileName = Path.GetFileNameWithoutExtension(inputFile) + "_encrypted" + Path.GetExtension(inputFile);
+                string fileName = Path.GetFileNameWithoutExtension(inputFile) + "_tmp" + Path.GetExtension(inputFile);
                 string outputFile = Path.Combine(Path.GetDirectoryName(inputFile), fileName);
                 try
                 {
@@ -38,6 +38,10 @@ namespace SecretBase.Utilities
                             }
                         }
                     }
+
+                    // 元ファイルに上書きコピー
+                    File.Copy(outputFile, inputFile, true);
+                    File.Delete(outputFile);
                 }
                 catch
                 {
@@ -81,6 +85,9 @@ namespace SecretBase.Utilities
                                 fsOut.Write(buffer, 0, read);
                             }
                         }
+                        // 元ファイルに上書きコピー
+                        File.Copy(outputFile, inputFile, true);
+                        File.Delete(outputFile);
                     }
                     catch
                     {

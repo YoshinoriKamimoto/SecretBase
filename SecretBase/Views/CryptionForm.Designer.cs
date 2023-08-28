@@ -41,7 +41,7 @@
             // encryptButton
             // 
             encryptButton.BackColor = Color.FromArgb(255, 192, 192);
-            encryptButton.Location = new Point(166, 200);
+            encryptButton.Location = new Point(125, 207);
             encryptButton.Name = "encryptButton";
             encryptButton.Size = new Size(75, 34);
             encryptButton.TabIndex = 0;
@@ -53,7 +53,7 @@
             // decryptButton
             // 
             decryptButton.BackColor = Color.FromArgb(192, 192, 255);
-            decryptButton.Location = new Point(247, 200);
+            decryptButton.Location = new Point(206, 207);
             decryptButton.Name = "decryptButton";
             decryptButton.Size = new Size(75, 34);
             decryptButton.TabIndex = 1;
@@ -64,16 +64,16 @@
             // 
             // filePathTextBox
             // 
-            filePathTextBox.Location = new Point(55, 62);
+            filePathTextBox.Location = new Point(37, 74);
             filePathTextBox.Name = "filePathTextBox";
             filePathTextBox.ReadOnly = true;
-            filePathTextBox.Size = new Size(285, 23);
+            filePathTextBox.Size = new Size(343, 23);
             filePathTextBox.TabIndex = 2;
             filePathTextBox.TabStop = false;
             // 
             // selectFileButton
             // 
-            selectFileButton.Location = new Point(346, 57);
+            selectFileButton.Location = new Point(37, 37);
             selectFileButton.Name = "selectFileButton";
             selectFileButton.Size = new Size(75, 31);
             selectFileButton.TabIndex = 3;
@@ -84,15 +84,15 @@
             // 
             // passwordTextBox
             // 
-            passwordTextBox.Location = new Point(112, 128);
+            passwordTextBox.Location = new Point(37, 138);
             passwordTextBox.Name = "passwordTextBox";
-            passwordTextBox.Size = new Size(228, 23);
+            passwordTextBox.Size = new Size(129, 23);
             passwordTextBox.TabIndex = 4;
             passwordTextBox.TabStop = false;
             // 
             // generatePasswordButton
             // 
-            generatePasswordButton.Location = new Point(346, 124);
+            generatePasswordButton.Location = new Point(172, 134);
             generatePasswordButton.Name = "generatePasswordButton";
             generatePasswordButton.Size = new Size(75, 30);
             generatePasswordButton.TabIndex = 5;
@@ -104,7 +104,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(55, 131);
+            label1.Location = new Point(37, 120);
             label1.Name = "label1";
             label1.Size = new Size(51, 15);
             label1.TabIndex = 6;
@@ -118,7 +118,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(484, 272);
+            ClientSize = new Size(401, 272);
             Controls.Add(label1);
             Controls.Add(selectFileButton);
             Controls.Add(filePathTextBox);

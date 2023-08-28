@@ -69,6 +69,7 @@ namespace SecretBase.Views
                 return;
             }
             MessageBox.Show("暗号化完了", "完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            filePathTextBox.Clear();
         }
 
         // 復号化ボタン
@@ -96,6 +97,7 @@ namespace SecretBase.Views
                 return;
             }
             MessageBox.Show("復号化完了", "完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            filePathTextBox.Clear();
         }
 
         // 入力データのバリデーションチェック
