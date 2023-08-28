@@ -10,7 +10,7 @@ namespace SecretBase.Utilities
         public static void EncryptFile(string inputFile, string password)
         {
             byte[] salt = new byte[Constants.Constants.saltLength];
-            new RNGCryptoServiceProvider().GetBytes(salt); // 鍵作成に使用する乱数のソルトを生成
+            RandomNumberGenerator.Fill(salt); // 鍵作成に使用する乱数のソルトを生成
 
             Rfc2898DeriveBytes key = new Rfc2898DeriveBytes(password, salt, 10000); // 任意のパスワード・作成したソルトからPBKDF2による鍵の作成
             using (Aes aes = Aes.Create())
